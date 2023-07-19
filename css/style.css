@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  margin: 0 auto;
+  justify-content: center;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+form button {
+  background-color: burlywood;
+}
+
+#book-shelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.book-card {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.book-card p {
+  margin-bottom: 5px;
+}
+
+.book-card button {
+  margin-top: 5px;
+}
+
+.book-card .delete-btn,
+.book-card .read-btn {
+  margin-top: 5px;
+}
+
+.book-card .delete-btn {
+  background-color: red;
+}
+
+.book-card .read-btn {
+  background-color: #4caf50;
+}
